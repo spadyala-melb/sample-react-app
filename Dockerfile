@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:20-alpine3.18
 # Above, we set the base image as a light weight node image called alpine
 
 WORKDIR '/app'
