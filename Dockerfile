@@ -2,7 +2,7 @@ FROM node:alpine
 # Above, we set the base image as a light weight node image called alpine
 
 WORKDIR '/app'
-# Above we set the build environment as a folder called /app in the docker container to prevent clashes
+
 
 COPY package.json .
 # To prevent repeated npm installs anytime we make any change, we'd copy over the package.json and install things first
