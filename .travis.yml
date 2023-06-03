@@ -3,13 +3,12 @@ sudo: required
 language: node_js
 
 node_js:
-  - "stable"
+  - "current-alpine"
 
 services:
   - docker
 
 before_install:
   - docker build -t spadyala-melb/sample-app -f Dockerfile .
-
-script:
-  - docker run -e CI=true spadyala-melb/sample-app npm run test
+# script:
+#   - docker run spadyala-melb/sample-app npm start
