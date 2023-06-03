@@ -2,8 +2,8 @@ sudo: required
 
 language: node_js
 
-node_js:
-  - 20.2.0
+# node_js:
+#   - 20.2.0
 
 services:
   - docker
